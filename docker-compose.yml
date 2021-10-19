@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ether_fundraisers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - FACTORY_ADDRESS=
+      - INFURA_URL=
+      - MNEMONIC_PHRASE=
+    ports:
+      - '80:3000'
+
